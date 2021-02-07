@@ -1,5 +1,4 @@
 opencv-python==3.4.3.18
 numpy
 tensorflow
-cv2
 streamlit
