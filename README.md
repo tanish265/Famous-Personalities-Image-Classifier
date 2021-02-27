@@ -2,8 +2,9 @@
 ## Image Classifier for 10 of world's famous personalities
 
 ### To run the app locally--
-#### 1.Install streamlit library using "pip install streamlit".
-#### 2.Go to the directory and run this command on terminal "streamlit run app.py"
+#### 1.Open Anaconda Prompt.
+#### 2.Install streamlit library using "pip install streamlit".
+#### 3.Go to the directory containing app.py and run this command on prompt "streamlit run app.py"
 
 ## Demo-
 ![](Demo/1.png)
