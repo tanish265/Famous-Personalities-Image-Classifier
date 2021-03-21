@@ -6,7 +6,7 @@ Created on Sat Feb  6 20:54:55 2021
 """
 
 import numpy as np
-import tensorflow as tf
+# import tensorflow as tf
 import PIL
 import streamlit as st
 
