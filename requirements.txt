@@ -1,5 +1,5 @@
 opencv-python==3.4.3.18
 numpy
-tensorflow
-streamlit
+tensorflow==2.3.1
+streamlit==0.76.0
 cv2
