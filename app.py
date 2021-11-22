@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Feb  6 20:54:55 2021
-
 @author: tanish
 """
 
@@ -28,14 +27,14 @@ def load_model():
 
 model=load_model()
 st.write("""
-         Personalities include - Anushka_Sharma, Barack_Obama,
+         Personalities include - Anushka_Sharma,Barack_Obama,
              Bill_Gates, Dalai_Lama,
               Indira_Nooyi, Melinda_Gates,
               Narendra_Modi, Sundar_Pichai,
-              Vikas_Khanna, Virat_Kohli
+              Vikas_Khanna, Virat_Kohli.
          """
          )
-uploaded_file=st.file_uploader("Please upload an image",type=["jpg","png"])
+uploaded_file=st.file_uploader("Please upload an image of the above mentioned personalities.",type=["jpg","png"])
 from PIL import Image,ImageOps
 
 
@@ -45,7 +44,7 @@ else:
     result=0
      # To read file as bytes:
     image = Image.open(uploaded_file)
-    st.image(image, use_column_width=True)
+    st.image(image, width=350)
     face_cascade = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
     image = np.asarray(image)
     img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -73,8 +72,7 @@ else:
               "Narendra_Modi", "Sundar_Pichai",
               "Vikas_Khanna", "Virat_Kohli"]
     try:
-        st.text( "The image is of "+class_names[result[0]])
+        st.subheader( "The image is of "+class_names[result[0]])
+        # st.markdown(html_temp,unsafe_allow_html=True)
     except:
-        st.text("Face not detectable")
-
-
+        st.subheader("Face not detectable")
