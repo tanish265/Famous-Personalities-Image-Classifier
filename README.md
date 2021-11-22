@@ -7,5 +7,4 @@
 #### 3.Go to the directory containing app.py and run this command on prompt "streamlit run app.py"
 
 ## Demo-
-![](Demo/1.png)
-![](Demo/2.png)
+![](Demo/Demo.png)
